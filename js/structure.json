@@ -1,0 +1,79 @@
+{
+  "step1": {
+    "id": "stepOne",
+    "state": "active",
+    "title": "General information",
+    "fields": {
+      "firstName": {
+        "type": "text",
+        "placeholder": "Type your name...",
+        "class": "form-control",
+        "name": "first-name"
+      },
+      "lastName": {
+        "type": "text",
+        "placeholder": "Type your last name...",
+        "class": "form-control",
+        "name": "last-name"
+      },
+      "email": {
+        "type": "email",
+        "placeholder": "Type your email...",
+        "class": "form-control",
+        "name": "email"
+      }
+    }
+  },
+
+  "step2": {
+    "id": "stepTwo",
+    "state": "not-active",
+    "title": "Current ocupation",
+    "fields": {
+      "job": {
+        "type": "text",
+        "placeholder": "What do you do?",
+        "class": "form-control",
+        "name": "job"
+      },
+      "jobDescription": {
+        "type": "textarea",
+        "placeholder": "Write a short description on what you do...",
+        "class": "form-control",
+        "name": "job-descr"
+      },
+      "stillWorking": {
+        "type": "checkbox",
+        "wrapperClass": "checkbox",
+        "label": "I still work here.",
+        "name": "still-working"
+      }
+    }
+  },
+
+  "step3": {
+    "id": "stepThree",
+    "state": "not-active",
+    "title": "Additional information",
+    "fields": {
+      "job": {
+        "type": "text",
+        "placeholder": "What do you do?",
+        "class": "form-control",
+        "name": "job"
+      },
+      "jobDescription": {
+        "type": "textarea",
+        "placeholder": "Write a short description on what you do...",
+        "class": "form-control",
+        "name": "job-descr"
+      },
+      "stillWorking": {
+        "type": "checkbox",
+        "wrapperClass": "checkbox",
+        "label": "I still work here.",
+        "name": "still-working"
+      }
+    }
+  }
+}
