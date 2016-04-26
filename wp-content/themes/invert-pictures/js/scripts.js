@@ -18,7 +18,7 @@ function vidplay() {
 
     video2.play();
 
-  }  
+  }
 
 }
 
@@ -28,9 +28,9 @@ function navOffTop() {
 
   var offTop = $('nav.main-nav').height();
 
-  var docScroll = $( document ).scrollTop();
+  var docScroll = $(document).scrollTop();
 
-  
+
 
   if (docScroll > offTop) {
 
@@ -86,7 +86,7 @@ function popupVideoReset(activePopupIframe) {
 
   var vidsrc = $frame.attr('src');
 
-  $frame.attr('src','');
+  $frame.attr('src', '');
 
 }
 
@@ -112,9 +112,9 @@ function popupSetSource(cl) {
 
   var $this = cl,
 
-      vidsrc = $this.attr('iframe-src'),
+    vidsrc = $this.attr('iframe-src'),
 
-      $frame = $('.iframe-popup').find('iframe');
+    $frame = $('.iframe-popup').find('iframe');
 
   $frame.attr('src', vidsrc);
 
@@ -183,7 +183,7 @@ $(document).ready(function() {
   // Nav Show/Hide
 
 
-  $('.tabs li span, .tabs-vertical li span').on('click', function(){
+  $('.tabs li span, .tabs-vertical li span').on('click', function() {
 
     $(this).parent('li').addClass('selected').siblings('li').removeClass('selected');
 
@@ -193,11 +193,11 @@ $(document).ready(function() {
 
 
 
- // Modals
+  // Modals
 
 
 
-  $('[iframe-modal-open]').on('click', function () {
+  $('[iframe-modal-open]').on('click', function() {
 
     var modalId = $(this).attr('popup-open');
 
@@ -211,7 +211,7 @@ $(document).ready(function() {
 
 
 
-  $('[modal-open]').on('click', function () {
+  $('[modal-open]').on('click', function() {
 
     var modalId = $(this).attr('modal-open');
 
@@ -221,7 +221,7 @@ $(document).ready(function() {
 
 
 
-  $('[close-popup]').on('click', function () {
+  $('[close-popup]').on('click', function() {
 
     popUpClose();
 
@@ -233,11 +233,11 @@ $(document).ready(function() {
 
   $(document).keyup(function(e) {
 
-    if (e.keyCode == 27) { 
+    if (e.keyCode == 27) {
 
       popUpClose();
 
-    }  
+    }
 
   });
 
@@ -276,4 +276,3 @@ $(document).on('scroll', function() {
   navOffTop();
 
 });
-
