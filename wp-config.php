@@ -23,10 +23,10 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
 }
 else {
   // Настройки базы данных на веб-сервере
-  define('DB_NAME', 'Имя_Базы_Данных');
-  define('DB_USER', 'Имя_Пользователя_Локальной_Базы_Данных');
-  define('DB_PASSWORD', 'Пароль_Локальной_Базы_Данных');
-  define('DB_HOST', 'Хост_Локальной_Базы_Данных');
+  define('DB_NAME', 'u925314599_inver');
+  define('DB_USER', 'u925314599_inver');
+  define('DB_PASSWORD', 'lY2xTwtFlG');
+  define('DB_HOST', 'localhost');
 
   // Выключаем debug на веб-сервере
   define('WP_DEBUG', false);
