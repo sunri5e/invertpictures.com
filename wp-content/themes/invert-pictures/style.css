@@ -4,3 +4,27 @@ Author: Z4 graphics
 Author URI: z4-graphics.com
 Version:
 */
+
+nav.main-nav .language-chooser li + li {
+	margin-left: -4px;
+}
+
+nav.main-nav .language-chooser li + li:before {
+	content: '/';
+}
+
+.language-chooser {
+	float: right;
+}
+
+.contact-us p {
+	margin: 0;
+}
+
+.contact-us .pop-up--content form input[type="submit"]{
+	width: auto;
+    border-color: #DDD;
+    padding: 17px 35px 18px;
+    font-size: 16px;
+    margin: 0;
+}

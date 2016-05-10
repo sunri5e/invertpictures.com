@@ -3,12 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="urf-8" name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
   <!-- <link rel="icon" type="image/png" href="img/logo.png"> -->
   <title><?php get_bloginfo('name'); ?></title>
   <meta name="description" content="We offer clean, simple, responsive and innovative user experience design for web and mobile applications">
   <script type="text/javascript" async="" src="http://www.google-analytics.com/analytics.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 
   <?php wp_head(); ?>
 </head>
@@ -88,17 +89,15 @@
         </a>
       </div>
       <!-- Menu -->
-      <ul class='menu'>
-        <li><a href="our-works/index.html">Our Works</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a modal-open='contactUsPopup'>Contact Us</a></li>
-      </ul>
+      <?php
+        wp_nav_menu( array(
+          'theme_location'  => 'primary',
+          'container'       => false,
+          'menu_class'      => 'menu main-menu',
+          'echo'            => true
+        ) );
+      ?>
       <!-- Language -->
-      <ul class='lang'>
-        <li class='active'><a href="#">eng</a></li>
-        <li>/</li>
-        <li><a href="#">ukr</a></li>
-      </ul>
+      <?php echo qtranxf_generateLanguageSelectCode('slag'); ?>
     </nav>
     <!-- End nav -->

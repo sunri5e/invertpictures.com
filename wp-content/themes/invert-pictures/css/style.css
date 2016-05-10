@@ -981,8 +981,11 @@ ul.post-feed.news li .news-receipt {
 
 /* Footer */
 .footer {
+  background-color: #fff;
   padding: 30px 0;
   border-top: 1px solid #ddd;
+  position: relative;
+  z-index: 100;
 }
 .footer a {
   text-decoration: none;
@@ -1151,21 +1154,35 @@ ul.post-feed.news li .news-receipt {
 
 /* PARALLAX */
  /*home*/
-section.home-paralax {
+section.home-parallax {
   padding: 0;
   overflow: hidden;
   position: relative;
   background-color: transparent;
 }
-section.home-paralax + section.home-paralax {
+section.home-parallax + section.home-parallax {
   margin-top: -200px;
 }
 @media (min-width: 1367px) {
-  section.home-paralax + section.home-paralax {
+  section.home-parallax + section.home-parallax {
     margin-top: -350px;
   }
 }
-.paraLayer {
+.home-parallax-1 {
+    background: -webkit-linear-gradient(transparent,#81A6BA, #826724, #684D0D);
+    background: -o-linear-gradient(transparent,#81A6BA, #826724, #684D0D);
+    background: -moz-linear-gradient(transparent,#81A6BA, #826724, #684D0D);
+    background: linear-gradient(transparent,#81A6BA, #826724, #684D0D);
+}
+.home-parallax-2 {
+  margin-top: 0 !important;
+}
+.home-parallax-3 {
+  margin-top: -170px !important;
+}
+
+
+.parallax-layer {
   position: absolute;
   top: 0;
   left: 0;
@@ -1174,18 +1191,39 @@ section.home-paralax + section.home-paralax {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-.paraLayer--text {
-  font-size: 36px;
-  line-height: 60px;
+.parallax-layer.parallax-layer-4 {
+  background-size: auto 100%;
+}
+body.ratio-3x4 .parallax-layer-3 {
+  background-size: 125%;
+}
+.parallax-layer--text {
+  font-size: 24px;
+  line-height: 42px;
   font-weight: 100;
   font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 1367px) {
+  .parallax-layer--text {
+    font-size: 36px;
+    line-height: 60px;
+  }
+}
+.parallax-layer--text.text-right {
+  right: 10%;
+}
+@media (min-width: 1367px) {
+  .parallax-layer--text.text-right {
+    right: 25%;
+  }
+}
+.parallax-layer--text.centered {
   position: absolute;
   top: 50%;
   width: 100%;
   transform: translateY(-50%);
-  text-align: center;
 }
-.paraLayer--text.color-white {
+.parallax-layer--text.color-white {
   color: #fff;
   text-shadow: 0 0 3px rgba(0,0,0,.25);
 }
@@ -1300,8 +1338,6 @@ section.home-paralax + section.home-paralax {
 /**/
 
 
-
-
 @media (min-width: 768px) {
   ul.post-feed li {
     width: 32%;
@@ -1322,4 +1358,25 @@ section.home-paralax + section.home-paralax {
   .slide-heading {
     font-size: 60px;
   }
+}
+
+
+/* TEMPORARY SHIT */
+.bx-controls.bx-has-pager {
+  display: none;
+}
+
+.homepage .footer {
+  background: #0D1518;
+  border: none;
+  color: #fff;
+  padding-bottom: 100px;
+}
+
+.home-parallax-4 {
+  margin-top: -160px !important;
+}
+
+.bottom-logo {
+  width: 200px;
 }

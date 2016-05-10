@@ -6,6 +6,9 @@ function vidplay() {
   if (video != null) {
     video.play();
   }
+  // video.addEventListener('ended', function(){
+  //     console.log
+  // });
   if (video2 != null) {
     video2.play();
   }  
@@ -125,18 +128,8 @@ navOffTop();
 // DOCUMENT READY
 $(document).ready(function() {
   activeTab();
-  jQuery.scrollSpeed(100, 800);
-  if ($('body').hasClass('with-skrollr')) {
-    skrollr.init({
-      forceHeight: false,
-      constants: {
-        slider: $('.home-slider').height(),
-        para1top: ($('section.about').offset().top),
-        para1bot: ($('.home-paralax-1').offset().top + ($('.home-paralax-1').outerHeight() / 2)),
-        para2top: ($('.home-paralax-2').offset().top - 700),
-        para2bot: ($('.home-paralax-2').offset().top + ($('.home-paralax-2').outerHeight() / 2)),
-      }
-    });
+  if (navigator.platform != 'MacIntel') {
+    jQuery.scrollSpeed(100, 800);
   }
   if ($('body').hasClass('with-slider')) {
     // Init Slider
@@ -157,8 +150,13 @@ $(document).ready(function() {
     activeTab();
   });
 
- // Modals
+ // Main menu links options
+  $('.menu-contact-us a').attr('modal-open', 'contactUsPopup');
+  $('.menu-disable a').on('click', function(e){
+    e.preventDefault();
+  });
 
+ // Modals
   $('[iframe-modal-open]').on('click', function () {
     var modalId = $(this).attr('popup-open');
     popupSetSource($(this));
@@ -167,6 +165,7 @@ $(document).ready(function() {
   });
 
   $('[modal-open]').on('click', function () {
+    // e.preventDefault();
     var modalId = $(this).attr('modal-open');
     popUpOpen(modalId);
   });

@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /invertpictures.com/
+RewriteBase /z4-gfx/invertpictures.com/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /invertpictures.com/index.php [L]
+RewriteRule . /z4-gfx/invertpictures.com/index.php [L]
 </IfModule>
 
 # END WordPress
