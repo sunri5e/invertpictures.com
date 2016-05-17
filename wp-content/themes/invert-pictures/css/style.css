@@ -261,8 +261,8 @@ section.movie-page {
 
 section.about {
   border-top: 1px solid #ddd;
-  padding-bottom: 0;
-  margin-bottom: -100px;
+  /*padding-bottom: 0;*/
+  /*margin-bottom: -100px;*/
   z-index: 11;
   background: transparent;
 }
@@ -1160,14 +1160,14 @@ section.home-parallax {
   position: relative;
   background-color: transparent;
 }
-section.home-parallax + section.home-parallax {
+/*section.home-parallax + section.home-parallax {
   margin-top: -200px;
 }
 @media (min-width: 1367px) {
   section.home-parallax + section.home-parallax {
     margin-top: -350px;
   }
-}
+}*/
 .home-parallax-1 {
     background: -webkit-linear-gradient(transparent,#81A6BA, #826724, #684D0D);
     background: -o-linear-gradient(transparent,#81A6BA, #826724, #684D0D);
@@ -1362,7 +1362,7 @@ body.ratio-3x4 .parallax-layer-3 {
 
 
 /* TEMPORARY SHIT */
-.bx-controls.bx-has-pager {
+/*.bx-controls.bx-has-pager {
   display: none;
 }
 
@@ -1379,4 +1379,4 @@ body.ratio-3x4 .parallax-layer-3 {
 
 .bottom-logo {
   width: 200px;
-}
+}*/

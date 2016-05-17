@@ -60,7 +60,38 @@
         </div>
       </section>
       <!-- parallax -->
-            <section class='home-parallax home-parallax-0'>
+      <section class='home-parallax home-parallax-0' style='padding-top: 148.5023647%'>
+        <div class='paraContent'>
+          <div class='parallax-layer'
+               data-_para1top='margin-top: 0%'
+               data-_para1bot='margin-top: -27%'
+               style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/parallax/1.png"); height: 0; padding-top: 175.77509196%;'>
+          </div>
+
+          <div class='parallax-layer'
+               data-_para1top='margin-top: 0%'
+               data-_para1bot='margin-top: -35%'
+               style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/parallax/2.png"); height: 0; padding-top: 183.28954283%;'>
+          </div>
+
+
+          <div class='parallax-layer'
+               data-_para1top='margin-top: 0%'
+               data-_para1bot='margin-top: -53.5%'
+               style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/parallax/3.png"); height: 0; padding-top: 202.15449291%;'>
+          </div>
+          <div class='parallax-layer'
+               data-_para1top='margin-top: 0%'
+               data-_para1bot='margin-top: 0%'
+               style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/parallax/4.png"); height: 0; padding-top: 148.5023647%'>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========
+           previous version 
+           ========== -->
+      <!-- <section class='home-parallax home-parallax-0'>
         <div class='paraContent'>
           <div class='parallax-layer'
                data-_para1top='background-position: 0% 0%'
@@ -180,7 +211,7 @@
                <img src="<?php echo get_template_directory_uri(); ?>/img/logo_w.svg" class='bottom-logo'>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- <div style="height: 1000px; background: #030307"></div> -->
     </div>
